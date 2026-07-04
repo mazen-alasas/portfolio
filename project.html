@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <title>Project Details - Mazen Alasas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/project.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">MAZEN<span>.</span>DATA</a>
+    <div class="nav-right">
+      <a href="index.html#projects" class="btn-project" style="padding:0.45rem 1rem;font-size:0.85rem;border-radius:8px;">← All Projects</a>
+      <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">
+        <span id="theme-icon">🌙</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main style="padding-top:64px;min-height:100vh;background:var(--bg);">
+  <div id="project-detail-content" style="max-width:900px;margin:0 auto;padding:3rem 2rem;"></div>
+</main>
+
+<footer class="footer" style="margin-top:4rem;">
+  <div class="footer-inner">
+    <div class="footer-copy">© 2025 Mazen Ahmed Alasas. Built with passion for data.</div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/project.js"></script>
+</body>
+</html>

@@ -1,0 +1,563 @@
+{
+  "personal": {
+    "name": "Mazen Ahmed Alasas",
+    "title": "Data Scientist & BI Developer",
+    "email": "mazen.alasas.ai@gmail.com",
+    "phone": "+201096411977",
+    "location": "Damietta, Egypt",
+    "linkedin": "https://www.linkedin.com/in/mazen-alasas/",
+    "github": "https://github.com/mazen-alasas",
+    "photo": "assets/profile.jpg",
+    "summary": "Data Analyst & BI Developer with a strong foundation in Machine Learning and AI. Experienced in Power BI, SQL, Python, and Tableau for business intelligence, alongside hands-on ML projects in computer vision, predictive modeling, and neural networks. Passionate about transforming data into actionable insights — whether through interactive dashboards or intelligent models.",
+    "available": true,
+    "status": "Building dashboards"
+  },
+  "stats": [
+    { "value": "9+", "label": "Projects Completed" },
+    { "value": "12+", "label": "Dashboards Built" },
+    { "value": "8", "label": "Certifications Earned" },
+    { "value": "2", "label": "Volunteer Activities" }
+  ],
+  "about": {
+    "intro": "I'm a Computer Engineering graduate with a dual background in Data Analytics/BI and Machine Learning. I build interactive dashboards that drive business decisions, and I develop ML models that solve real-world problems — from predicting customer churn to deploying computer vision systems on edge devices.",
+    "goals": "My goal is to bridge data engineering, business intelligence, and machine learning — building end-to-end data solutions that go beyond dashboards into intelligent, automated systems.",
+    "interests": ["Data Visualization", "Business Intelligence", "Machine Learning", "Data Solutions", "Competitive Programming", "Open Source"]
+  },
+  "education": [
+    {
+      "institution": "Information Technology Institute (ITI)",
+      "degree": "Intensive Training Program (ITP) - Power BI Development",
+      "period": "Jan 2026 - May 2026",
+      "location": "Mansoura, Egypt",
+      "highlights": [
+        "Led a 5-member team to build a full-stack BI system using SQL Server, SSRS, Power BI, Excel and Tableau across 12 dashboards.",
+        "Designed a 15-table OLTP database and a Galaxy Schema DWH (4 facts, 8 dims) to centralize delivery data from 5 platforms.",
+        "Automated COD risk detection using n8n — real-time Telegram alerts, reducing refusal-related losses by up to 50%."
+      ],
+      "type": "training"
+    },
+    {
+      "institution": "Misr Higher Institute for Engineering and Technology",
+      "degree": "Bachelor's in Computer Engineering",
+      "period": "Sep 2020 - Jul 2025",
+      "location": "Mansoura, Egypt",
+      "highlights": [
+        "Graduation Project: Enhancing Road Safety using AI, IOT, and V2V Communication.",
+        "Led AI development for a smart road safety system with driver monitoring and traffic sign recognition.",
+        "Deployed solution on Raspberry Pi with cloud integration for real-time processing."
+      ],
+      "type": "degree"
+    }
+  ],
+  "experience": [
+
+  ],
+  "projects": {
+    "categories": [
+      { "id": "machine-learning", "label": "Machine Learning", "default": true },
+      { "id": "data-analytics", "label": "Data Analytics & BI" },
+      { "id": "software", "label": "Software Engineering" }
+    ],
+    "items": [
+      {
+        "id": "iti-graduation-bi",
+        "title": "ITI Graduation Project - Full-Stack BI System",
+        "category": "data-analytics",
+        "featured": true,
+        "thumbnail": "assets/projects/iti/Dashboard example.png",
+        "images": [
+          "assets/projects/iti/ERD.png",
+          "assets/projects/iti/Diagram.png", 
+          "assets/projects/iti/DWH_Diagram.png",
+          "assets/projects/iti/Report example.png",
+          "assets/projects/iti/dashboard 1.png",
+          "assets/projects/iti/dashboard 2.png",
+          "assets/projects/iti/dashboard 3.png",
+          "assets/projects/iti/dashboard 4.png"
+        ],
+        "tags": ["Power BI", "SQL Server", "Tableau", "SSRS", "Galaxy Schema", "n8n"],
+        "brief": "Led a 5-member team to build a full-stack BI system for a delivery company across 20 dashboards covering profitability, COD risk, and competitor intelligence.",
+        "github": "https://github.com/mazen-alasas/ITI-Graduation-Project/",
+        "demo": "https://app.powerbi.com/view?r=eyJrIjoiMTdlODViZjUtNmIzZS00ZDY5LThiZDMtNDcwNTNmN2M3ZDNiIiwidCI6IjNmNGYyOGVkLTAwNWUtNGI5Ny1hNzJkLWFkNDQ4OWYzMTg1NyJ9",
+        "details": {
+          "overview": "A comprehensive Business Intelligence solution built as part of the ITI Power BI Development program, covering the full data pipeline from raw database design to executive dashboards.",
+          "problem": "A multi-platform delivery company lacked unified visibility into profitability, COD risk, and operational performance across 5 delivery platforms.",
+          "objectives": ["Centralize data from 5 platforms into a single DWH", "Build 20+ dashboards covering KPIs", "Automate COD risk alerts", "Provide competitor intelligence insights"],
+          "dataset": "Real-world delivery company data across multiple platforms",
+          "methodology": "Designed 15-table OLTP database → Galaxy Schema DWH (4 facts, 8 dimensions) → ETL via SSIS → Power BI + Tableau dashboards",
+          "kpis": ["Profitability per region", "COD refusal rate", "Delivery success rate", "Platform-wise revenue"],
+          "insights": ["Reduced COD refusal-related losses by up to 50% through automated n8n alerts", "Identified top-performing regions and underperforming platforms"],
+          "challenges": ["Merging inconsistent data from 5 different platforms", "Designing a scalable Galaxy Schema for multiple fact tables"],
+          "technologies": ["SQL Server", "Power BI", "Tableau", "SSRS", "SSIS", "n8n", "Galaxy Schema"]
+        }
+      },
+      {
+        "id": "financial-powerbi",
+        "title": "Financial Performance Power BI Dashboard",
+        "category": "data-analytics",
+        "featured": true,
+        "thumbnail": "assets/projects/financial-bi.png",
+        "images": [
+          "assets/projects/financial/schema.png",
+          "assets/projects/financial/dashboard.png", 
+          "assets/projects/financial/filters.png"
+        ],
+        "tags": ["Power BI", "DAX", "Figma", "KPI Tracking"],
+        "brief": "Interactive Power BI dashboard analyzing revenue, COGS, and profit trends to support executive decision-making.",
+        "github": "",
+        "demo": "https://app.powerbi.com/view?r=eyJrIjoiNTM4NTc5NDYtNTcwOC00YzI1LThjNzYtZmFlZjBmNDJlYWFmIiwidCI6IjNmNGYyOGVkLTAwNWUtNGI5Ny1hNzJkLWFkNDQ4OWYzMTg1NyJ9",
+        "details": {
+          "overview": "An end-to-end financial analytics dashboard that monitors key business performance indicators and highlights profitability trends.",
+          "problem": "Business stakeholders needed clear visibility into financial health — revenue vs. cost dynamics, margin fluctuations, and underperforming periods.",
+          "objectives": ["Track revenue, COGS, and profit over time", "Identify margin fluctuations", "Provide drill-down capability by period and category"],
+          "dataset": "Company financial dataset (revenue, costs, profit by period)",
+          "methodology": "Data ingestion → Power Query cleaning → DAX measures → Figma-designed dashboard layout → Power BI implementation",
+          "kpis": ["Gross Profit Margin", "Net Revenue Growth", "COGS Ratio", "Period-over-Period Change"],
+          "insights": ["Identified seasonal dips in profit margins", "Highlighted periods of underperformance for management action"],
+          "challenges": ["Building dynamic DAX measures for rolling periods", "Designing an intuitive layout for non-technical stakeholders"],
+          "technologies": ["Power BI", "DAX", "Power Query", "Figma", "SQL Server"]
+        }
+      },
+      {
+        "id": "sales-powerbi",
+        "title": "Sales Performance Analysis Dashboard",
+        "category": "data-analytics",
+        "featured": false,
+        "thumbnail": "assets/projects/Sales/sales-bi.png",
+        "images": [
+          "assets/projects/Sales/schema.png",
+          "assets/projects/Sales/dashboard 1.png",
+          "assets/projects/Sales/dashboard 2.png"
+        ],
+        "tags": ["Power BI", "DAX", "Star Schema", "Sales Analytics"],
+        "brief": "Sales analytics using Power BI with star schema data modeling and DAX KPI measures for regional and product performance.",
+        "github": "",
+        "demo": "https://app.powerbi.com/view?r=eyJrIjoiNTM4NTc5NDYtNTcwOC00YzI1LThjNzYtZmFlZjBmNDJlYWFmIiwidCI6IjNmNGYyOGVkLTAwNWUtNGI5Ny1hNzJkLWFkNDQ4OWYzMTg1NyJ9",
+        "details": {
+          "overview": "A comprehensive sales performance analytics solution that enables dynamic filtering and trend analysis across products, regions, and time periods.",
+          "problem": "Sales teams lacked a unified view of performance, making it hard to identify top products and underperforming segments.",
+          "objectives": ["Analyze sales across products and regions", "Build star schema model", "Develop DAX KPI measures"],
+          "dataset": "Multi-dimensional sales dataset with product, region, and time dimensions",
+          "methodology": "Star schema design → Power Query transformation → DAX measures → Interactive dashboard",
+          "kpis": ["Total Revenue", "Growth Rate", "Profitability by Segment", "Regional Performance"],
+          "insights": ["Identified top-performing products by region", "Revealed underperforming segments for strategic action"],
+          "challenges": ["Optimizing DAX for large datasets", "Building intuitive navigation for non-technical users"],
+          "technologies": ["Power BI", "DAX", "Power Query", "Star Schema"]
+        }
+      },
+      {
+        "id": "tableau-sales",
+        "title": "Business Sales & Profit Analysis - Tableau",
+        "category": "data-analytics",
+        "featured": false,
+        "thumbnail": "assets/projects/tableau-sales/dashboard 1.png",
+        "images": [
+          "assets/projects/tableau-sales/dashboard 1.png",
+          "assets/projects/tableau-sales/dashboard 2.png"
+        ],
+        "tags": ["Tableau", "Sales Analytics", "Data Visualization"],
+        "brief": "Interactive Tableau dashboards tracking sales trends, category performance, and profit insights across business units.",
+        "github": "",
+        "demo": "https://public.tableau.com/app/profile/mazen.alasas/viz/Final_Dashboard_TP/Overview",
+        "details": {
+          "overview": "Tableau-based business intelligence dashboard that provides interactive exploration of sales and profit data.",
+          "problem": "Business managers needed a self-service analytics tool to explore sales trends without relying on static reports.",
+          "objectives": ["Analyze sales trends over time", "Track category performance", "Enable self-service data exploration"],
+          "dataset": "Business sales dataset with time, category, and profit dimensions",
+          "methodology": "Data preparation → Tableau calculated fields → Dashboard design → Insight extraction",
+          "kpis": ["Total Sales", "Profit Margin", "Category Revenue", "Trend Analysis"],
+          "insights": ["Identified seasonal trends in category performance", "Highlighted high-margin vs low-margin product lines"],
+          "challenges": ["Designing intuitive Tableau layouts for executive use"],
+          "technologies": ["Tableau", "Data Visualization", "Business Analytics"]
+        }
+      },
+      {
+        "id": "adas-graduation",
+        "title": "ADAS Graduation Project",
+        "category": "machine-learning",
+        "featured": true,
+        "thumbnail": "assets/projects/adas.png",
+        "images": [
+          "assets/projects/adas/mentors.png",
+          "assets/projects/adas/comp.png",
+          "assets/projects/adas/tsr.png",
+          "assets/projects/adas/final.jpg"
+        ],
+        "tags": ["YOLOv8", "Python", "Raspberry Pi", "Computer Vision", "OpenCV", "Firebase"],
+        "brief": "AI-powered Advanced Driver Assistance System (ADAS) integrating Driver Face Recognition, Driver Monitoring, Traffic Sign Recognition, and V2V communication using Computer Vision, Edge AI, and IoT technologies.",
+        "github": "https://github.com/mazen-alasas/Graduation-Project",
+        "demo": "https://youtu.be/r2umzlxuFVc",
+        "details": {
+          "overview": "An AI and IoT-based Advanced Driver Assistance System (ADAS) developed as our Computer Engineering graduation project. The system enhances driving safety through Driver Face Recognition, Driver Monitoring, Traffic Sign Recognition, Vehicle-to-Vehicle (V2V) communication, and a real-time dashboard powered by Firebase.",
+
+          "problem": "Road accidents are often caused by driver fatigue, distraction, unauthorized vehicle access, missed traffic signs, and the lack of communication between nearby vehicles. The project addresses these challenges by combining Computer Vision, Edge AI, and V2V technologies into a unified safety system.",
+
+          "objectives": [
+            "Authenticate drivers using facial recognition before vehicle operation.",
+            "Monitor driver attention and detect drowsiness in real time.",
+            "Recognize traffic signs using a YOLO-based object detection model.",
+            "Enable secure real-time V2V communication between vehicles.",
+            "Deploy AI models on edge devices for low-latency inference.",
+            "Provide live system monitoring through Firebase and a graphical dashboard."
+          ],
+
+          "dataset": "Traffic Sign Recognition was trained using the German Traffic Sign Recognition Benchmark (GTSRB) dataset. Driver Face Recognition relies on registered user images, while Driver Monitoring operates using real-time facial landmarks without requiring model training.",
+
+          "methodology": "Driver authentication using face_recognition → Driver Monitoring using dlib facial landmarks and Eye Aspect Ratio (EAR) → Traffic Sign Recognition using YOLOv8 on Raspberry Pi → Socket communication between Laptop and Raspberry Pi → SPI communication with ESP32 → Real-time system status synchronization via Firebase.",
+
+          "kpis": [
+            "Real-time driver authentication before vehicle operation.",
+            "Real-time drowsiness and driver absence detection.",
+            "Real-time traffic sign recognition on Raspberry Pi.",
+            "Low-latency communication between AI modules and embedded hardware.",
+            "Live synchronization of system states and alerts through Firebase."
+          ],
+
+          "insights": [
+            "Splitting AI workloads between the Laptop and Raspberry Pi improved overall system performance and resource utilization.",
+            "EAR-based driver monitoring provided an efficient lightweight solution for real-time drowsiness detection.",
+            "YOLOv8 enabled accurate real-time traffic sign recognition suitable for edge deployment.",
+            "Socket and SPI communication created a seamless pipeline between AI modules and embedded hardware."
+          ],
+
+          "challenges": [
+            "Deploying computer vision workloads efficiently across heterogeneous hardware.",
+            "Maintaining real-time performance while running multiple AI modules simultaneously.",
+            "Synchronizing communication between Laptop, Raspberry Pi, ESP32, and Firebase.",
+            "Balancing inference speed and accuracy for edge deployment."
+          ],
+
+          "technologies": [
+            "Python",
+            "YOLOv8",
+            "OpenCV",
+            "PyTorch",
+            "dlib",
+            "face_recognition",
+            "NumPy",
+            "Firebase Realtime Database",
+            "Socket Programming",
+            "SPI Communication",
+            "Raspberry Pi",
+            "ESP32",
+            "Computer Vision"
+          ]
+        }
+      },
+      {
+        "id": "heart-disease",
+        "title": "Heart Disease Risk Classifier",
+        "category": "machine-learning",
+        "featured": true,
+        "thumbnail": "assets/projects/heart-ml.png",
+        "images": [
+          "assets/projects/heart/1.png",
+          "assets/projects/heart/2.png"
+        ],
+        "tags": ["Python", "Scikit-learn", "Streamlit", "ML Pipeline"],
+        "brief": "End-to-end ML pipeline for heart disease risk prediction using UCI dataset, deployed as a Streamlit web app.",
+        "github": "https://github.com/mazen-alasas/End-to-End-Heart-Disease-Classification-Project",
+        "demo": "",
+        "notebooks": "https://github.com/mazen-alasas/End-to-End-Heart-Disease-Classification-Project/tree/main/notebooks",
+        "kaggle": "",
+        "details": {
+          "overview": "A complete machine learning project from data preprocessing to deployment, predicting heart disease risk for real-time clinical decision support.",
+          "problem": "Early detection of heart disease risk can save lives. This project explores automated risk classification from patient health data.",
+          "objectives": ["Build an accurate heart disease classifier", "Deploy as an interactive web app", "Provide real-time predictions"],
+          "dataset": "UCI Heart Disease Dataset — 303 patient records with 14 clinical features",
+          "methodology": "EDA → Feature engineering → Scikit-learn pipeline → Model evaluation → Streamlit deployment",
+          "kpis": ["Classification Accuracy", "AUC-ROC Score", "Precision & Recall"],
+          "insights": ["Identified key predictors: chest pain type, max heart rate, ST depression", "Achieved strong classification performance with optimized pipeline"],
+          "challenges": ["Handling class imbalance", "Selecting the most predictive features", "Building an intuitive Streamlit UI"],
+          "technologies": ["Python", "Scikit-learn", "Pandas", "NumPy", "Streamlit"]
+        }
+      },
+      {
+        "id": "customer-churn",
+        "title": "Customer Churn Prediction",
+        "category": "machine-learning",
+        "featured": true,
+        "thumbnail": "assets/projects/churn-ml.png",
+        "images": [
+          "assets/projects/churn/1.png",
+          "assets/projects/churn/2.png",
+          "assets/projects/churn/3.png"
+        ],
+        "tags": ["Python", "XGBoost", "Scikit-learn", "Pandas"],
+        "brief": "ML project predicting bank customer churn using 270,000+ records with XGBoost achieving 86% accuracy.",
+        "github": "https://github.com/mazen-alasas/Bank-Customer-Churn-ML",
+        "demo": "",
+        "kaggle": "https://www.kaggle.com/code/mazenalasas/bank-churn-binary-classification",
+        "details": {
+          "overview": "End-to-end machine learning project for predicting customer churn using real-world banking data at scale.",
+          "problem": "Banks lose significant revenue from churning customers. Early identification enables targeted retention strategies.",
+          "objectives": ["Predict customer churn probability", "Process 270,000+ records", "Compare multiple ML models"],
+          "dataset": "Real-world banking dataset with 270,000+ customer records and behavioral features",
+          "methodology": "EDA → Data cleaning → Feature engineering & encoding → Model training → Evaluation → Comparison",
+          "kpis": ["Accuracy: 86%", "XGBoost vs Logistic Regression comparison", "Feature importance analysis"],
+          "insights": ["Account balance and product usage are top churn predictors", "XGBoost significantly outperformed Logistic Regression"],
+          "challenges": ["Processing 270,000+ records efficiently", "Handling class imbalance in churn labels"],
+          "technologies": ["Python", "Pandas", "NumPy", "Scikit-learn", "XGBoost"]
+        }
+      },
+      {
+        "id": "self-driving",
+        "title": "NEAT Self-Driving Car Simulation",
+        "category": "machine-learning",
+        "featured": false,
+        "thumbnail": "assets/projects/self-driving.png",
+        "images": [
+          "assets/projects/neat/map.png"
+        ],
+        "tags": ["Python", "NEAT Algorithm", "Pygame", "Neural Networks"],
+        "brief": "AI simulation where virtual cars evolve driving strategies using NEAT evolutionary algorithm and neural networks over 10+ generations.",
+        "github": "https://github.com/mazen-alasas/NEAT-Self-driving-Car",
+        "demo": "https://youtu.be/lMeiqTBaM5E",
+        "details": {
+          "overview": "A neural network evolution simulation where cars learn autonomous driving through the NEAT genetic algorithm.",
+          "problem": "Demonstrating how evolutionary algorithms can solve complex autonomous driving behavior without pre-labeled training data.",
+          "objectives": ["Implement NEAT evolutionary algorithm", "Train autonomous driving behavior", "Visualize evolution across generations"],
+          "dataset": "Sensor-based fitness scoring from simulated environment",
+          "methodology": "Simulation environment (Pygame) → NEAT genome initialization → Evolutionary training → Fitness evaluation → Generation evolution",
+          "kpis": ["10+ training generations", "Sensor-based fitness scoring", "Autonomous navigation improvement"],
+          "insights": ["Cars successfully learned to avoid walls and navigate tracks after 10+ generations", "NEAT efficiently explored diverse neural architectures"],
+          "challenges": ["Designing a meaningful fitness function", "Balancing exploration vs exploitation in NEAT"],
+          "technologies": ["Python", "Pygame", "NEAT Algorithm", "Neural Networks"]
+        }
+      },
+      {
+        "id": "graph-visualizer",
+        "title": "Graph Traversal Visualizer",
+        "category": "software",
+        "featured": false,
+        "thumbnail": "assets/projects/graph.png",
+        "images": [
+          "assets/projects/graph/1.png",
+          "assets/projects/graph/2.png",
+          "assets/projects/graph/3.png"
+        ],
+        "tags": ["Python", "Flask", "NetworkX", "JavaScript", "BFS", "DFS"],
+        "brief": "Interactive web app visualizing BFS and DFS graph traversal algorithms with real-time animations and dynamic graph support.",
+        "github": "https://github.com/mazen-alasas/GraphTraversal-Visualizer",
+        "demo": "https://youtu.be/R6lZsiIgHLw",
+        "details": {
+          "overview": "An educational web tool that brings graph algorithms to life through real-time visual animations.",
+          "problem": "Graph traversal algorithms are abstract and hard to intuitively understand from textbooks alone.",
+          "objectives": ["Visualize BFS and DFS in real-time", "Support dynamic graph creation", "Achieve sub-1-second response time"],
+          "dataset": "User-defined dynamic graphs",
+          "methodology": "Flask backend → NetworkX graph processing → Real-time animation → JavaScript frontend",
+          "kpis": ["Response time < 1 second", "Support for dynamic graphs of arbitrary size"],
+          "insights": ["Visual animations significantly improved algorithm comprehension", "Optimized NetworkX processing for responsive UX"],
+          "challenges": ["Synchronizing backend graph processing with frontend animations", "Optimizing for large dynamic graphs"],
+          "technologies": ["Python", "Flask", "NetworkX", "JavaScript", "HTML/CSS"]
+        }
+      }
+    ]
+  },
+  "skills": {
+    "categories": [
+      {
+        "id": "machine-learning",
+        "label": "Machine Learning",
+        "default": true
+      },
+      {
+        "id": "data-analytics",
+        "label": "Data Analytics" 
+      },
+      {
+        "id": "software",
+        "label": "Software Engineering"
+      }
+    ],
+    "items": [
+      {
+        "name": "Power BI",
+        "icon": "📊",
+        "category": ["data-analytics"],
+        "proficiency": 70,
+        "level": "Intermediate",
+        "details": {
+          "data-analytics": ["Power Query", "DAX Measures & Calculated Columns", "Data Modeling (Star & Galaxy Schema)", "Interactive Dashboards & Reports", "SSRS Integration", "Bookmarks & Navigation", "KPI Cards & Drill-throughs"]
+        }
+      },
+      {
+        "name": "SQL",
+        "icon": "🗄️",
+        "category": ["data-analytics", "software"],
+        "proficiency": 78,
+        "level": "Intermediate",
+        "details": {
+          "data-analytics": ["Joins & Aggregations", "Window Functions", "CTEs & Subqueries", "SQL Server & SQLite", "Data Transformation & ETL", "Stored Procedures"],
+          "software": ["Database Design", "NoSQL (MongoDB)", "Query Optimization"]
+        }
+      },
+      {
+        "name": "Python",
+        "icon": "🐍",
+        "category": ["data-analytics", "machine-learning", "software"],
+        "proficiency": 85,
+        "level": "Advanced",
+        "details": {
+          "data-analytics": ["Pandas & NumPy", "Matplotlib, Seaborn, Plotly", "EDA & Data Cleaning", "Streamlit Dashboards"],
+          "machine-learning": ["Scikit-learn", "XGBoost", "PyTorch", "Model Evaluation & Tuning"],
+          "software": ["Flask & Web APIs", "Socket Programming", "Firebase Admin SDK", "Pygame", "Object-Oriented Programming", "Design Patterns", "Solid Principles"]
+        }
+      },
+      {
+        "name": "Tableau",
+        "icon": "📈",
+        "category": ["data-analytics"],
+        "proficiency": 60,
+        "level": "Intermediate",
+        "details": {
+          "data-analytics": ["Interactive Dashboards", "Calculated Fields", "Trend Analysis", "Sales & Business Analytics", "Category Performance Insights"]
+        }
+      },
+      {
+        "name": "Excel",
+        "icon": "📋",
+        "category": ["data-analytics"],
+        "proficiency": 65,
+        "level": "Advanced",
+        "details": {
+          "data-analytics": ["Complex Formulas & Functions", "Pivot Tables & Pivot Charts", "Power Query & Power Pivot", "Data Visualization", "Financial Analysis", "KPI Dashboards"]
+        }
+      },
+      {
+        "name": "Machine Learning",
+        "icon": "🤖",
+        "category": ["machine-learning"],
+        "proficiency": 60,
+        "level": "Intermediate",
+        "details": {
+          "machine-learning": ["Supervised Learning (Classification, Regression)", "Scikit-learn Pipelines", "XGBoost & Ensemble Methods", "Model Evaluation (AUC, F1, Accuracy)", "Feature Engineering", "Cross Validation"]
+        }
+      },
+      {
+        "name": "Computer Vision",
+        "icon": "👁️",
+        "category": ["machine-learning"],
+        "proficiency": 65,
+        "level": "Beginner",
+        "details": {
+          "machine-learning": ["YOLOv11 Object Detection", "OpenCV", "Face Recognition (dlib)", "Real-time Detection on Edge Devices", "Raspberry Pi Deployment"]
+        }
+      },
+      {
+        "name": "Data Modeling",
+        "icon": "🗂️",
+        "category": ["data-analytics"],
+        "proficiency": 75,
+        "level": "Advanced",
+        "details": {
+          "data-analytics": ["Star Schema Design", "Galaxy Schema (Multi-Fact)", "OLTP & OLAP Databases", "Dimension & Fact Tables", "ETL Processes (SSIS)", "Databricks & Big Data Tools"]
+        }
+      },
+      {
+        "name": "C/C++",
+        "icon": "⚙️",
+        "category": ["software"],
+        "proficiency": 78,
+        "level": "Beginner",
+        "details": {
+          "software": ["Data Structures & Algorithms", "Competitive Programming", "Object-Oriented Programming", "Standard Template Library (STL)", "Memory Management", "File I/O"]
+        }
+      },
+      {
+        "name": "Git & GitHub",
+        "icon": "🔧",
+        "category": ["data-analytics", "machine-learning", "software"],
+        "proficiency": 82,
+        "level": "Advanced",
+        "details": {
+          "data-analytics": ["Version Control for Projects", "GitHub Portfolio Management"],
+          "machine-learning": ["Experiment Tracking", "Collaborative ML Projects"],
+          "software": ["Branching & Merging", "CI/CD Basics", "Open Source Contributions"]
+        }
+      }
+    ]
+  },
+  "certifications": [
+    {
+      "title": "Google Data Analytics",
+      "issuer": "Coursera & Google",
+      "date": "2026",
+      "link": "https://www.coursera.org/account/accomplishments/professional-cert/UYUFTHCPQBWO",
+      "image": "assets/certifications/Google Data Analytics.png",
+      "skills": ["Data Analytics", "SQL", "Tableau", "R", "Data Visualization"]
+    },
+    {
+      "title": "Machine Learning Specialization",
+      "issuer": "DeepLearning.AI - Coursera",
+      "date": "2024",
+      "link": "https://www.coursera.org/account/accomplishments/specialization/4K18GYPTUAG4",
+      "image": "assets/certifications/Coursera - Machine Learning.png",
+      "skills": ["Supervised Learning", "Neural Networks", "Decision Trees", "Scikit-learn"]
+    },
+    {
+      "title": "AI and Machine Learning",
+      "issuer": "Sprints x Microsoft Summer Camp",
+      "date": "2025",
+      "link": "https://drive.google.com/file/d/1_bHHEYlhB7rboRX7ZeVZOXtLrhiHT6G4/view",
+      "image": "assets/certifications/ML - Sprints X Microsoft.png",
+      "skills": ["AI", "Machine Learning", "Microsoft Azure"]
+    },
+    {
+      "title": "Databases",
+      "issuer": "Manara",
+      "date": "2024",
+      "link": "https://app.manara.tech/verify-certificate?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjZXJ0aWZpY2F0ZUlkIjozMzA3OCwiaWF0IjoxNzM0NjgzMTQ3fQ.9Gvv3uvQ0mKZfjJWu2vdtWItCvoCWBEsjnU_XRaDYjk",
+      "image": "assets/certifications/Database - Manara.png",
+      "skills": ["SQL", "Database Design", "Query Optimization"]
+    },
+    {
+      "title": "Database - Fundamentals",
+      "issuer": "MaharaTech",
+      "date": "2025",
+      "link": "https://drive.google.com/file/d/1pQTQqqUJuIO2AvrC9s7KFtXRqsUSc9fm/view?usp=sharing",
+      "image": "assets/certifications/Database Fundamentals - Mahara-Tech.png",
+      "skills": ["SQL", "Database Design", "ERD", "Normalization"]
+    },
+    {
+      "title": "Object Oriented Programming",
+      "issuer": "MaharaTech",
+      "date": "2026",
+      "link": "https://drive.google.com/file/d/1VsH-KGt6gjgy8zulbegert6v1Xgc13QC/view",
+      "image": "assets/certifications/OOP_Course_Certificate_En.png",
+      "skills": ["OOP", "C++", "Software Design"]
+    },
+    {
+      "title": "Scientific Computing with Python",
+      "issuer": "freeCodeCamp",
+      "date": "2024",
+      "link": "https://freecodecamp.org/certification/mazen-alasas/scientific-computing-with-python-v7",
+      "image": "assets/certifications/freecodecamp - Python.png",
+      "skills": ["Python", "NumPy", "Algorithms", "Data Structures"]
+    },
+    {
+      "title": "Everything You'll Need to Know About Git",
+      "issuer": "Frontend Masters",
+      "date": "2024",
+      "link": "https://static.frontendmasters.com/ud/c/242bdc03e3/tNgMJoASup/everything-git.pdf",
+      "image": "assets/certifications/Everything Youll Need to Know About Git - FrontendMasters.png",
+      "skills": ["Git", "Version Control", "Branching", "CI/CD"]
+    }
+  ],
+  "volunteering": [
+    {
+      "organization": "ENG MET ACPC CLUB",
+      "role": "Problem Setter & ICPC Participant",
+      "period": "Jun 2023 – Jul 2024",
+      "community": "ICPC Community",
+      "responsibilities": [
+        "Taught Competitive Programming and problem-solving techniques using C++, coaching 20+ trainees.",
+        "Delivered lessons on key techniques: Frequency Array, Two Pointers, Prefix Sum, and Binary Search.",
+        "Problem Setter for Weekly Contests, creating more than 14 contests with varying difficulty levels.",
+        "Participated in 2 editions of ICPC competitions."
+      ],
+      "link": "https://icpc.global/ICPCID/FHFLZISMO1IA",
+      "impact": "Mentored 20+ competitive programmers and ran 14+ weekly contests"
+    }
+  ]
+}
