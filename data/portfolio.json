@@ -92,6 +92,32 @@
         }
       },
       {
+        "id": "tableau-sales",
+        "title": "Business Sales & Profit Analysis - Tableau",
+        "category": "data-analytics",
+        "featured": false,
+        "thumbnail": "assets/projects/tableau-sales/dashboard 1.png",
+        "images": [
+          "assets/projects/tableau-sales/dashboard 1.png",
+          "assets/projects/tableau-sales/dashboard 2.png"
+        ],
+        "tags": ["Tableau", "Sales Analytics", "Data Visualization"],
+        "brief": "Interactive Tableau dashboards tracking sales trends, category performance, and profit insights across business units.",
+        "github": "",
+        "demo": "https://public.tableau.com/app/profile/mazen.alasas/viz/Final_Dashboard_TP/Overview",
+        "details": {
+          "overview": "Tableau-based business intelligence dashboard that provides interactive exploration of sales and profit data.",
+          "problem": "Business managers needed a self-service analytics tool to explore sales trends without relying on static reports.",
+          "objectives": ["Analyze sales trends over time", "Track category performance", "Enable self-service data exploration"],
+          "dataset": "Business sales dataset with time, category, and profit dimensions",
+          "methodology": "Data preparation → Tableau calculated fields → Dashboard design → Insight extraction",
+          "kpis": ["Total Sales", "Profit Margin", "Category Revenue", "Trend Analysis"],
+          "insights": ["Identified seasonal trends in category performance", "Highlighted high-margin vs low-margin product lines"],
+          "challenges": ["Designing intuitive Tableau layouts for executive use"],
+          "technologies": ["Tableau", "Data Visualization", "Business Analytics"]
+        }
+      },
+      {
         "id": "financial-powerbi",
         "title": "Financial Performance Power BI Dashboard",
         "category": "data-analytics",
@@ -143,32 +169,6 @@
           "insights": ["Identified top-performing products by region", "Revealed underperforming segments for strategic action"],
           "challenges": ["Optimizing DAX for large datasets", "Building intuitive navigation for non-technical users"],
           "technologies": ["Power BI", "DAX", "Power Query", "Star Schema"]
-        }
-      },
-      {
-        "id": "tableau-sales",
-        "title": "Business Sales & Profit Analysis - Tableau",
-        "category": "data-analytics",
-        "featured": false,
-        "thumbnail": "assets/projects/tableau-sales/dashboard 1.png",
-        "images": [
-          "assets/projects/tableau-sales/dashboard 1.png",
-          "assets/projects/tableau-sales/dashboard 2.png"
-        ],
-        "tags": ["Tableau", "Sales Analytics", "Data Visualization"],
-        "brief": "Interactive Tableau dashboards tracking sales trends, category performance, and profit insights across business units.",
-        "github": "",
-        "demo": "https://public.tableau.com/app/profile/mazen.alasas/viz/Final_Dashboard_TP/Overview",
-        "details": {
-          "overview": "Tableau-based business intelligence dashboard that provides interactive exploration of sales and profit data.",
-          "problem": "Business managers needed a self-service analytics tool to explore sales trends without relying on static reports.",
-          "objectives": ["Analyze sales trends over time", "Track category performance", "Enable self-service data exploration"],
-          "dataset": "Business sales dataset with time, category, and profit dimensions",
-          "methodology": "Data preparation → Tableau calculated fields → Dashboard design → Insight extraction",
-          "kpis": ["Total Sales", "Profit Margin", "Category Revenue", "Trend Analysis"],
-          "insights": ["Identified seasonal trends in category performance", "Highlighted high-margin vs low-margin product lines"],
-          "challenges": ["Designing intuitive Tableau layouts for executive use"],
-          "technologies": ["Tableau", "Data Visualization", "Business Analytics"]
         }
       },
       {
