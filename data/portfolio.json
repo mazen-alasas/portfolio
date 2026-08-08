@@ -357,7 +357,7 @@
   "skills": {
     "categories": [
       { "id": "machine-learning", "label": "ML & Data Science", "default": true },
-      { "id": "data-analytics", "label": "Data Analytics"},
+      { "id": "data-analytics", "label": "Data Analytics & BI"},
       { "id": "software", "label": "Software Engineering" }
     ],
     "items": [
