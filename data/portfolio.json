@@ -54,8 +54,8 @@
   ],
   "projects": {
     "categories": [
-      { "id": "data-analytics", "label": "Data Analytics & BI", "default": true },
-      { "id": "machine-learning", "label": "Machine Learning" },
+      { "id": "machine-learning", "label": "ML & Data Science", "default": true },
+      { "id": "data-analytics", "label": "Data Analytics & BI"},
       { "id": "software", "label": "Software Engineering" }
     ],
     "items": [
@@ -356,8 +356,8 @@
   },
   "skills": {
     "categories": [
-      { "id": "data-analytics", "label": "Data Analytics", "default": true  },
-      { "id": "machine-learning", "label": "Machine Learning" },
+      { "id": "machine-learning", "label": "ML & Data Science", "default": true },
+      { "id": "data-analytics", "label": "Data Analytics"},
       { "id": "software", "label": "Software Engineering" }
     ],
     "items": [
