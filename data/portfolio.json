@@ -1,14 +1,14 @@
 {
   "personal": {
     "name": "Mazen Ahmed Alasas",
-    "title": "Data Scientist & BI Developer",
+    "title": "Data Scientist",
     "email": "mazen.alasas.ai@gmail.com",
     "phone": "+201096411977",
-    "location": "Damietta, Egypt",
+    "location": "Cairo, Egypt",
     "linkedin": "https://www.linkedin.com/in/mazen-alasas/",
     "github": "https://github.com/mazen-alasas",
     "photo": "assets/profile.jpg",
-    "summary": "Data Analyst & BI Developer with a strong foundation in Machine Learning and AI. Experienced in Power BI, SQL, Python, and Tableau for business intelligence, alongside hands-on ML projects in computer vision, predictive modeling, and neural networks. Passionate about transforming data into actionable insights — whether through interactive dashboards or intelligent models.",
+    "summary": "Data Scientist focused on Machine Learning and Deep Learning, with hands-on experience in Python, SQL, predictive modeling, and computer vision. Experienced in building ML models, from data preprocessing and feature engineering to evaluation and deployment. Currently expanding my expertise in NLP and Transformers, with a focus on developing end-to-end machine learning solutions for real-world problems.",
     "available": true,
     "status": "Building dashboards"
   },
@@ -19,9 +19,18 @@
     { "value": "2", "label": "Volunteer Activities" }
   ],
   "about": {
-    "intro": "I'm a Computer Engineering graduate with a dual background in Data Analytics/BI and Machine Learning. I build interactive dashboards that drive business decisions, and I develop ML models that solve real-world problems — from predicting customer churn to deploying computer vision systems on edge devices.",
-    "goals": "My goal is to bridge data engineering, business intelligence, and machine learning — building end-to-end data solutions that go beyond dashboards into intelligent, automated systems.",
-    "interests": ["Data Visualization", "Business Intelligence", "Machine Learning", "Data Solutions", "Competitive Programming", "Open Source"]
+    "intro": "I'm a Computer Engineering graduate focused on Data Science, Machine Learning, and Deep Learning. I have hands-on experience building predictive models and computer vision solutions, covering data preprocessing, feature engineering, model evaluation, and deployment. My background also includes data analysis, ETL, and data modeling, giving me a broader understanding of the data lifecycle.",
+    "goals": "I'm currently deepening my knowledge of Deep Learning, especially NLP and Transformers, while building Ticket Trace, an end-to-end NLP project for analyzing IT support tickets and identifying recurring issues. My goal is to build reliable machine learning solutions that solve practical problems, with plans to explore LLMs and Agentic AI as I progress.",
+    "interests": [
+      "Data Science",
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing",
+      "Computer Vision",
+      "LLMs and Agentic AI",
+      "Problem Solving",
+      "MLOps"
+    ]
   },
   "education": [
     {
@@ -50,7 +59,17 @@
     }
   ],
   "experience": [
-
+    {
+      "company": "CORELIA",
+      "role": "Machine Learning Intern",
+      "period": "Jul 2025 - Sep 2025",
+      "location": "El Maadi, Egypt",
+      "highlights": [
+        "Developed and evaluated machine learning models on real-world datasets, achieving 90%+ accuracy.",
+        "Applied EDA, data preprocessing, feature engineering, and hyperparameter tuning to improve model performance.",
+        "Deployed machine learning models using FastAPI and Streamlit, following MLOps principles."
+      ]
+    }
   ],
   "projects": {
     "categories": [
@@ -357,18 +376,71 @@
   "skills": {
     "categories": [
       { "id": "machine-learning", "label": "ML & Data Science", "default": true },
-      { "id": "data-analytics", "label": "Data Analytics & BI"},
+      { "id": "data-analytics", "label": "Data Analytics & BI" },
       { "id": "software", "label": "Software Engineering" }
     ],
     "items": [
       {
-        "name": "Power BI",
-        "icon": "📊",
-        "category": ["data-analytics"],
-        "proficiency": 70,
+        "name": "Python",
+        "icon": "🐍",
+        "category": ["data-analytics", "machine-learning", "software"],
+        "proficiency": 85,
+        "level": "Advanced",
+        "details": {
+          "data-analytics": ["Pandas & NumPy", "Matplotlib, Seaborn, Plotly", "EDA & Data Cleaning", "Streamlit Dashboards"],
+          "machine-learning": ["Scikit-learn", "XGBoost", "PyTorch", "Model Evaluation & Tuning", "SciPy & Statistics"],
+          "software": ["Flask & FastAPI", "Socket Programming", "Firebase Admin SDK", "Pygame", "Object-Oriented Programming", "Design Patterns", "SOLID Principles"]
+        }
+      },
+      {
+        "name": "Machine Learning",
+        "icon": "🤖",
+        "category": ["machine-learning"],
+        "proficiency": 75,
         "level": "Intermediate",
         "details": {
-          "data-analytics": ["Power Query", "DAX Measures & Calculated Columns", "Data Modeling (Star & Galaxy Schema)", "Interactive Dashboards & Reports", "SSRS Integration", "Bookmarks & Navigation", "KPI Cards & Drill-throughs"]
+          "machine-learning": ["Supervised Learning (Classification, Regression)", "Scikit-learn Pipelines", "XGBoost & Ensemble Methods", "Model Evaluation (AUC, F1, Accuracy)", "Feature Engineering", "Cross Validation", "Hyperparameter Tuning"]
+        }
+      },
+      {
+        "name": "Deep Learning",
+        "icon": "🧠",
+        "category": ["machine-learning"],
+        "proficiency": 65,
+        "level": "Intermediate",
+        "details": {
+          "machine-learning": ["PyTorch", "Neural Networks", "RNNs & LSTMs", "Transformers", "Regularization & Optimization", "CNN Architectures", "Transfer Learning"]
+        }
+      },
+      {
+        "name": "NLP",
+        "icon": "💬",
+        "category": ["machine-learning"],
+        "proficiency": 60,
+        "level": "Intermediate",
+        "details": {
+          "machine-learning": ["NLTK", "Text Preprocessing & Tokenization", "Word Embeddings (Word2Vec, GloVe)", "Text Representation (TF-IDF, BoW)", "Sentiment Analysis", "Transformers for NLP"]
+        }
+      },
+      {
+        "name": "Computer Vision",
+        "icon": "👁️",
+        "category": ["machine-learning"],
+        "proficiency": 65,
+        "level": "Intermediate",
+        "details": {
+          "machine-learning": ["YOLOv11 Object Detection", "OpenCV", "Face Recognition (dlib)", "Real-time Detection on Edge Devices", "Raspberry Pi Deployment", "ONNX Export"]
+        }
+      },
+      {
+        "name": "MLOps & Deployment",
+        "icon": "🚀",
+        "category": ["machine-learning", "software"],
+        "proficiency": 55,
+        "level": "Beginner",
+        "details": {
+          "machine-learning": ["FastAPI for ML APIs", "Flask", "MLflow Experiment Tracking", "Docker (Basic)", "GitHub Actions CI/CD", "ONNX Model Export", "Redis (Basic)"],
+          "software": ["FastAPI", "Flask", "Docker (Basic)", "CI/CD Pipelines", "REST API Design"]
         }
       },
       {
@@ -383,15 +455,13 @@
         }
       },
       {
-        "name": "Python",
-        "icon": "🐍",
-        "category": ["data-analytics", "machine-learning", "software"],
-        "proficiency": 85,
-        "level": "Advanced",
+        "name": "Power BI",
+        "icon": "📊",
+        "category": ["data-analytics"],
+        "proficiency": 70,
+        "level": "Intermediate",
         "details": {
-          "data-analytics": ["Pandas & NumPy", "Matplotlib, Seaborn, Plotly", "EDA & Data Cleaning", "Streamlit Dashboards"],
-          "machine-learning": ["Scikit-learn", "XGBoost", "PyTorch", "Model Evaluation & Tuning"],
-          "software": ["Flask & Web APIs", "Socket Programming", "Firebase Admin SDK", "Pygame", "Object-Oriented Programming", "Design Patterns", "Solid Principles"]
+          "data-analytics": ["Power Query & M Language", "DAX Measures & Calculated Columns", "Data Modeling (Star & Galaxy Schema)", "Interactive Dashboards & Reports", "SSRS Integration", "Bookmarks & Navigation", "KPI Cards & Drill-throughs"]
         }
       },
       {
@@ -409,29 +479,9 @@
         "icon": "📋",
         "category": ["data-analytics"],
         "proficiency": 65,
-        "level": "Advanced",
-        "details": {
-          "data-analytics": ["Complex Formulas & Functions", "Pivot Tables & Pivot Charts", "Power Query & Power Pivot", "Data Visualization", "Financial Analysis", "KPI Dashboards"]
-        }
-      },
-      {
-        "name": "Machine Learning",
-        "icon": "🤖",
-        "category": ["machine-learning"],
-        "proficiency": 60,
         "level": "Intermediate",
         "details": {
-          "machine-learning": ["Supervised Learning (Classification, Regression)", "Scikit-learn Pipelines", "XGBoost & Ensemble Methods", "Model Evaluation (AUC, F1, Accuracy)", "Feature Engineering", "Cross Validation"]
-        }
-      },
-      {
-        "name": "Computer Vision",
-        "icon": "👁️",
-        "category": ["machine-learning"],
-        "proficiency": 65,
-        "level": "Beginner",
-        "details": {
-          "machine-learning": ["YOLOv11 Object Detection", "OpenCV", "Face Recognition (dlib)", "Real-time Detection on Edge Devices", "Raspberry Pi Deployment"]
+          "data-analytics": ["Complex Formulas & Functions", "Pivot Tables & Pivot Charts", "Power Query & Power Pivot", "Data Visualization", "Financial Analysis", "KPI Dashboards"]
         }
       },
       {
@@ -439,7 +489,7 @@
         "icon": "🗂️",
         "category": ["data-analytics"],
         "proficiency": 75,
-        "level": "Advanced",
+        "level": "Intermediate",
         "details": {
           "data-analytics": ["Star Schema Design", "Galaxy Schema (Multi-Fact)", "OLTP & OLAP Databases", "Dimension & Fact Tables", "ETL Processes (SSIS)", "Databricks & Big Data Tools"]
         }
@@ -449,7 +499,7 @@
         "icon": "⚙️",
         "category": ["software"],
         "proficiency": 78,
-        "level": "Beginner",
+        "level": "Intermediate",
         "details": {
           "software": ["Data Structures & Algorithms", "Competitive Programming", "Object-Oriented Programming", "Standard Template Library (STL)", "Memory Management", "File I/O"]
         }
@@ -462,7 +512,7 @@
         "level": "Advanced",
         "details": {
           "data-analytics": ["Version Control for Projects", "GitHub Portfolio Management"],
-          "machine-learning": ["Experiment Tracking", "Collaborative ML Projects"],
+          "machine-learning": ["Experiment Tracking", "Collaborative ML Projects", "GitHub Actions CI/CD"],
           "software": ["Branching & Merging", "CI/CD Basics", "Open Source Contributions"]
         }
       }
