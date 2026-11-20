@@ -211,7 +211,7 @@
           "FastAPI",
           "Docker"
         ],
-        "brief": "Built and deployed an end-to-end NLP system trained on real GitHub issues, achieving 88.66% Micro F1 on 142,320 held-out examples, with quantized ONNX inference running directly in the browser.",
+        "brief": "Built an end-to-end GitHub issue classifier achieving 88.66% Micro F1 with PyTorch DistilBERT on 142,320 held-out issues, with separately evaluated ONNX INT8 browser deployment.",
         "github": "https://github.com/mazen-alasas/issue-intent",
         "demo": "https://issue-intent.pages.dev/",
         "details": {
@@ -280,40 +280,40 @@
           "assets/projects/adas/final.jpg"
         ],
         "tags": ["YOLOv8", "Python", "Raspberry Pi", "Computer Vision", "OpenCV", "Firebase"],
-        "brief": "AI-powered Advanced Driver Assistance System (ADAS) integrating Driver Face Recognition, Driver Monitoring, Traffic Sign Recognition, and V2V communication using Computer Vision, Edge AI, and IoT technologies.",
+        "brief": "Developed computer vision components for an ADAS prototype integrating driver recognition, drowsiness monitoring, YOLOv8 traffic sign detection, and Raspberry Pi edge inference alongside V2V communication.",
         "github": "https://github.com/mazen-alasas/Graduation-Project",
         "demo": "https://youtu.be/r2umzlxuFVc",
         "details": {
-          "overview": "An AI and IoT-based Advanced Driver Assistance System (ADAS) developed as our Computer Engineering graduation project. The system enhances driving safety through Driver Face Recognition, Driver Monitoring, Traffic Sign Recognition, Vehicle-to-Vehicle (V2V) communication, and a real-time dashboard powered by Firebase.",
+          "overview": "A team-developed AI, IoT, and embedded systems ADAS prototype combining driver authentication, landmark-based driver monitoring, YOLOv8 traffic sign recognition on Raspberry Pi, V2V communication, and a Firebase-connected dashboard.",
 
           "problem": "Road accidents are often caused by driver fatigue, distraction, unauthorized vehicle access, missed traffic signs, and the lack of communication between nearby vehicles. The project addresses these challenges by combining Computer Vision, Edge AI, and V2V technologies into a unified safety system.",
 
           "objectives": [
-            "Authenticate drivers using facial recognition before vehicle operation.",
-            "Monitor driver attention and detect drowsiness in real time.",
-            "Recognize traffic signs using a YOLO-based object detection model.",
-            "Enable secure real-time V2V communication between vehicles.",
-            "Deploy AI models on edge devices for low-latency inference.",
-            "Provide live system monitoring through Firebase and a graphical dashboard."
+            "Authenticate drivers with facial recognition before vehicle operation.",
+            "Detect drowsiness and distraction using facial landmarks and Eye Aspect Ratio (EAR).",
+            "Recognize traffic signs using YOLOv8 on Raspberry Pi.",
+            "Exchange vehicle warnings over ESP-NOW with AES encryption.",
+            "Connect AI modules to embedded hardware using sockets and SPI.",
+            "Display vehicle status and alerts through Firebase and a graphical dashboard."
           ],
 
           "dataset": "Traffic Sign Recognition was trained using the German Traffic Sign Recognition Benchmark (GTSRB) dataset. Driver Face Recognition relies on registered user images, while Driver Monitoring operates using real-time facial landmarks without requiring model training.",
 
-          "methodology": "Driver authentication using face_recognition → Driver Monitoring using dlib facial landmarks and Eye Aspect Ratio (EAR) → Traffic Sign Recognition using YOLOv8 on Raspberry Pi → Socket communication between Laptop and Raspberry Pi → SPI communication with ESP32 → Real-time system status synchronization via Firebase.",
+          "methodology": "Driver authentication with face_recognition → dlib facial landmarks and EAR-based monitoring → YOLOv8 traffic sign detection on Raspberry Pi → Socket communication between laptop and Raspberry Pi → SPI integration with embedded controllers → ESP-NOW/AES V2V messaging → Firebase status visualization.",
 
           "kpis": [
-            "Real-time driver authentication before vehicle operation.",
-            "Real-time drowsiness and driver absence detection.",
-            "Real-time traffic sign recognition on Raspberry Pi.",
-            "Low-latency communication between AI modules and embedded hardware.",
-            "Live synchronization of system states and alerts through Firebase."
+            "Driver authentication and drowsiness-monitoring prototype capabilities.",
+            "YOLOv8-based traffic sign detection on Raspberry Pi.",
+            "Socket and SPI communication between AI and embedded modules.",
+            "ESP-NOW V2V warning messages with AES encryption.",
+            "Firebase-connected vehicle status and alerts."
           ],
 
           "insights": [
-            "Splitting AI workloads between the Laptop and Raspberry Pi improved overall system performance and resource utilization.",
-            "EAR-based driver monitoring provided an efficient lightweight solution for real-time drowsiness detection.",
-            "YOLOv8 enabled accurate real-time traffic sign recognition suitable for edge deployment.",
-            "Socket and SPI communication created a seamless pipeline between AI modules and embedded hardware."
+            "Facial recognition, landmark-based monitoring, and YOLOv8 address different driver and road-safety functions.",
+            "Running traffic sign inference on Raspberry Pi demonstrates edge deployment within a multi-device prototype.",
+            "Socket, SPI, and ESP-NOW links connect computer vision outputs to embedded and V2V components.",
+            "Firebase provides a shared status layer for the graphical dashboard."
           ],
 
           "challenges": [
@@ -334,6 +334,8 @@
             "Firebase Realtime Database",
             "Socket Programming",
             "SPI Communication",
+            "ESP-NOW",
+            "AES Encryption",
             "Raspberry Pi",
             "ESP32",
             "Computer Vision"
@@ -351,21 +353,21 @@
           "assets/projects/heart/2.png"
         ],
         "tags": ["Python", "Scikit-learn", "Streamlit", "ML Pipeline"],
-        "brief": "End-to-end ML pipeline for heart disease risk prediction using UCI dataset, deployed as a Streamlit web app.",
+        "brief": "Built a UCI heart disease classification pipeline comparing classical ML models, PCA, feature selection, and hyperparameter tuning, with a Streamlit prediction app.",
         "github": "https://github.com/mazen-alasas/End-to-End-Heart-Disease-Classification-Project",
         "demo": "",
         "notebooks": "https://github.com/mazen-alasas/End-to-End-Heart-Disease-Classification-Project/tree/main/notebooks",
         "kaggle": "",
         "details": {
-          "overview": "A complete machine learning project from data preprocessing to deployment, predicting heart disease risk for real-time clinical decision support.",
+          "overview": "An educational end-to-end machine learning project exploring heart disease classification on the UCI dataset, from exploratory analysis and feature selection to model comparison, tuning, and a Streamlit prediction interface. It is not a clinically validated diagnostic tool.",
           "problem": "Early detection of heart disease risk can save lives. This project explores automated risk classification from patient health data.",
-          "objectives": ["Build an accurate heart disease classifier", "Deploy as an interactive web app", "Provide real-time predictions"],
+          "objectives": ["Compare classical classifiers for heart disease prediction","Explore PCA, RFE, and statistical feature selection","Tune candidate models using Scikit-learn search methods","Present predictions through a Streamlit interface"],
           "dataset": "UCI Heart Disease Dataset — 303 patient records with 14 clinical features",
-          "methodology": "EDA → Feature engineering → Scikit-learn pipeline → Model evaluation → Streamlit deployment",
-          "kpis": ["Classification Accuracy", "AUC-ROC Score", "Precision & Recall"],
-          "insights": ["Identified key predictors: chest pain type, max heart rate, ST depression", "Achieved strong classification performance with optimized pipeline"],
+          "methodology": "UCI data cleaning and EDA → PCA, RFE, and Chi-Square feature selection → Logistic Regression, Decision Tree, Random Forest, and SVM comparison → GridSearchCV/RandomizedSearchCV → Saved Scikit-learn pipeline → Streamlit app",
+          "kpis": ["Accuracy, precision, recall, and F1 score","ROC-AUC evaluation","Cross-validated hyperparameter search"],
+          "insights": ["Compared Logistic Regression, Decision Tree, Random Forest, and SVM for the same classification task","Explored PCA, RFE, and Chi-Square to study dimensionality reduction and feature selection","Exported a fitted preprocessing-and-model pipeline for use in a Streamlit application"],
           "challenges": ["Handling class imbalance", "Selecting the most predictive features", "Building an intuitive Streamlit UI"],
-          "technologies": ["Python", "Scikit-learn", "Pandas", "NumPy", "Streamlit"]
+          "technologies": ["Python","Scikit-learn","Pandas","NumPy","PCA","RFE","GridSearchCV","Streamlit"]
         }
       },
       {
@@ -380,20 +382,20 @@
           "assets/projects/churn/3.png"
         ],
         "tags": ["Python", "XGBoost", "Scikit-learn", "Pandas"],
-        "brief": "ML project predicting bank customer churn using 270,000+ records with XGBoost achieving 86% accuracy.",
+        "brief": "Compared classifiers on 165K Kaggle banking training records, reporting 86.53% accuracy and 63.38% F1, with individual and CSV-batch Streamlit predictions.",
         "github": "https://github.com/mazen-alasas/Bank-Customer-Churn-ML",
-        "demo": "",
+        "demo": "https://bank-customer-churn-ml-ffdj7crpkwfurdxxsgarjk.streamlit.app/",
         "kaggle": "https://www.kaggle.com/code/mazenalasas/bank-churn-binary-classification",
         "details": {
-          "overview": "End-to-end machine learning project for predicting customer churn using real-world banking data at scale.",
+          "overview": "A bank customer churn classification project based on Kaggle Playground Series S4E1. Compares classical ML models, tunes candidate classifiers, and provides a Streamlit interface for single-customer and downloadable batch CSV predictions.",
           "problem": "Banks lose significant revenue from churning customers. Early identification enables targeted retention strategies.",
-          "objectives": ["Predict customer churn probability", "Process 270,000+ records", "Compare multiple ML models"],
-          "dataset": "Real-world banking dataset with 270,000+ customer records and behavioral features",
-          "methodology": "EDA → Data cleaning → Feature engineering & encoding → Model training → Evaluation → Comparison",
-          "kpis": ["Accuracy: 86%", "XGBoost vs Logistic Regression comparison", "Feature importance analysis"],
-          "insights": ["Account balance and product usage are top churn predictors", "XGBoost significantly outperformed Logistic Regression"],
-          "challenges": ["Processing 270,000+ records efficiently", "Handling class imbalance in churn labels"],
-          "technologies": ["Python", "Pandas", "NumPy", "Scikit-learn", "XGBoost"]
+          "objectives": ["Classify customer churn from banking features","Prepare and compare models using approximately 165K labeled training records","Evaluate predictive performance using accuracy, F1, precision, and recall","Support individual and CSV-batch predictions in Streamlit"],
+          "dataset": "Kaggle Playground Series S4E1 bank customer churn dataset; 165,034 labeled training rows before deduplication, with a separate competition test dataset.",
+          "methodology": "EDA → Duplicate removal and feature encoding → Logistic Regression, Random Forest, KNN, and XGBoost comparison → GridSearchCV tuning → Evaluation → Streamlit single-customer and CSV-batch inference",
+          "kpis": ["Accuracy: 86.53%","F1 score: 63.38%","Precision: 75.47%; Recall: 54.63%","Streamlit individual and downloadable CSV-batch predictions"],
+          "insights": ["Compared Logistic Regression, Random Forest, KNN, and XGBoost on the Kaggle classification task","Supported both manually entered customer features and bulk predictions from uploaded CSV files"],
+          "challenges": ["Preparing and encoding mixed categorical and numerical banking features","Handling class imbalance in churn labels","Keeping input transformations consistent for individual and batch predictions"],
+          "technologies": ["Python","Pandas","NumPy","Scikit-learn","XGBoost","GridSearchCV","Streamlit"]
         }
       },
       {
@@ -406,7 +408,7 @@
           "assets/projects/neat/map.png"
         ],
         "tags": ["Python", "NEAT Algorithm", "Pygame", "Neural Networks"],
-        "brief": "AI simulation where virtual cars evolve driving strategies using NEAT evolutionary algorithm and neural networks over 10+ generations.",
+        "brief": "Built a Pygame NEAT driving simulation with 30 evolving cars per generation, five distance sensors, four actions, and a 10-generation run.",
         "github": "https://github.com/mazen-alasas/NEAT-Self-driving-Car",
         "demo": "https://youtu.be/lMeiqTBaM5E",
         "details": {
@@ -414,9 +416,9 @@
           "problem": "Demonstrating how evolutionary algorithms can solve complex autonomous driving behavior without pre-labeled training data.",
           "objectives": ["Implement NEAT evolutionary algorithm", "Train autonomous driving behavior", "Visualize evolution across generations"],
           "dataset": "Sensor-based fitness scoring from simulated environment",
-          "methodology": "Simulation environment (Pygame) → NEAT genome initialization → Evolutionary training → Fitness evaluation → Generation evolution",
-          "kpis": ["10+ training generations", "Sensor-based fitness scoring", "Autonomous navigation improvement"],
-          "insights": ["Cars successfully learned to avoid walls and navigate tracks after 10+ generations", "NEAT efficiently explored diverse neural architectures"],
+          "methodology": "Pygame driving simulation → NEAT population of 30 agents → Five distance-sensor inputs per car → Four neural-network driving actions → Distance-based fitness updates → Evolution over up to 10 generations",
+          "kpis": ["30 simulated cars per generation","5 distance sensors per car and 4 driving actions","10 configured generations","Distance-based fitness scoring"],
+          "insights": ["NEAT evolves both network connections and weights using fitness feedback from the simulation","Each car uses five distance measurements to select among four driving actions","Distance traveled contributes to the fitness assigned to each evolving agent"],
           "challenges": ["Designing a meaningful fitness function", "Balancing exploration vs exploitation in NEAT"],
           "technologies": ["Python", "Pygame", "NEAT Algorithm", "Neural Networks"]
         }
@@ -433,18 +435,18 @@
           "assets/projects/graph/3.png"
         ],
         "tags": ["Python", "Flask", "NetworkX", "JavaScript", "BFS", "DFS"],
-        "brief": "Interactive web app visualizing BFS and DFS graph traversal algorithms with real-time animations and dynamic graph support.",
+        "brief": "Built an interactive Flask and NetworkX tool to visualize BFS and DFS, custom graphs, visited edges, and reconstructed paths to target nodes.",
         "github": "https://github.com/mazen-alasas/GraphTraversal-Visualizer",
         "demo": "https://youtu.be/R6lZsiIgHLw",
         "details": {
           "overview": "An educational web tool that brings graph algorithms to life through real-time visual animations.",
           "problem": "Graph traversal algorithms are abstract and hard to intuitively understand from textbooks alone.",
-          "objectives": ["Visualize BFS and DFS in real-time", "Support dynamic graph creation", "Achieve sub-1-second response time"],
+          "objectives": ["Visualize BFS and DFS traversal steps","Create graphs with user-defined nodes and edges","Select start and target nodes and display discovered paths"],
           "dataset": "User-defined dynamic graphs",
           "methodology": "Flask backend → NetworkX graph processing → Real-time animation → JavaScript frontend",
-          "kpis": ["Response time < 1 second", "Support for dynamic graphs of arbitrary size"],
-          "insights": ["Visual animations significantly improved algorithm comprehension", "Optimized NetworkX processing for responsive UX"],
-          "challenges": ["Synchronizing backend graph processing with frontend animations", "Optimizing for large dynamic graphs"],
+          "kpis": ["BFS and DFS traversal visualization","User-defined nodes and edges","Visited-edge and reconstructed-path results from the Flask API"],
+          "insights": ["Implemented BFS and DFS as separate traversal functions with visited-edge and path outputs","Used NetworkX for graph representation and JavaScript for interactive visualization"],
+          "challenges": ["Synchronizing traversal results with frontend animations","Managing graph state and user-selected start/target nodes"],
           "technologies": ["Python", "Flask", "NetworkX", "JavaScript", "HTML/CSS"]
         }
       }
