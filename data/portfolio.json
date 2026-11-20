@@ -191,6 +191,83 @@
         }
       },
       {
+        "id": "issue-intent",
+        "title": "Issue Intent — End-to-End GitHub Issue Classification",
+        "category": "machine-learning",
+        "featured": true,
+        "thumbnail": "assets/projects/issue-intent/cover.png",
+        "images": [
+          "assets/projects/issue-intent/bug.png",
+          "assets/projects/issue-intent/feature.png",
+          "assets/projects/issue-intent/question.png",
+          "assets/projects/issue-intent/docs.png",
+          "assets/projects/issue-intent/huggingface.png"
+        ],
+        "tags": [
+          "NLP",
+          "DistilBERT",
+          "PyTorch",
+          "ONNX",
+          "FastAPI",
+          "Docker"
+        ],
+        "brief": "Built and deployed an end-to-end NLP system trained on real GitHub issues, achieving 88.66% Micro F1 on 142,320 held-out examples, with quantized ONNX inference running directly in the browser.",
+        "github": "https://github.com/mazen-alasas/issue-intent",
+        "demo": "https://issue-intent.pages.dev/",
+        "details": {
+          "overview": "An end-to-end NLP and ML engineering project that classifies GitHub issues into bug, feature, question, and documentation. Covers dataset quality auditing, reproducible experiments, transformer fine-tuning, model optimization, and deployment through both a browser-based application and a containerized inference API.",
+          "problem": "GitHub repositories receive large volumes of issues covering different intents. Manually categorizing these reports takes time and can delay issue triage. This project explores automated intent classification to help organize incoming issues and support maintainers.",
+          "objectives": [
+            "Build a reproducible classification pipeline using real GitHub issue reports.",
+            "Compare classical NLP, neural networks, and transformer-based approaches.",
+            "Evaluate the selected model on the official held-out benchmark.",
+            "Optimize model size and CPU inference using ONNX INT8 quantization.",
+            "Deploy an interactive browser application without requiring a continuously running inference server."
+          ],
+          "dataset": "NLBSE 2023 Issue Report Classification — 1,418,201 real GitHub issues, including 1,275,881 original training records and 142,320 official test examples. After exact-text deduplication and conflicting-label filtering, 1,221,982 records remained for training and validation.",
+          "methodology": "Dataset audit and cleaning → Stratified train/validation split → TF-IDF classical baselines → Structured text preprocessing → PyTorch TextCNN → DistilBERT fine-tuning → Official test evaluation → ONNX FP32 export and INT8 quantization → React browser inference and Cloudflare Pages deployment.",
+          "kpis": [
+            "88.66% Micro F1 and 79.12% Macro F1 on the 142,320-example official test set (PyTorch DistilBERT).",
+            "48.17% reduction in ONNX model size after INT8 quantization.",
+            "372 Python tests and 19 frontend tests passed.",
+            "Browser-based inference using ONNX Runtime Web and WASM."
+          ],
+          "insights": [
+            "DistilBERT achieved stronger validation F1 scores than the reported classical and TextCNN baselines.",
+            "Selecting the checkpoint by validation Macro F1 helped account for performance on less frequent issue classes.",
+            "INT8 quantization reduced the ONNX graph from 255.54 MiB to 132.44 MiB.",
+            "Hosting model weights on Hugging Face enabled a static Cloudflare Pages application with inference executed locally in the browser."
+          ],
+          "challenges": [
+            "Handling duplicate reports, conflicting labels, and class imbalance in a large real-world text dataset.",
+            "Designing structured preprocessing and token budgeting for long GitHub issue descriptions.",
+            "Training and evaluating transformer models under limited compute resources.",
+            "Maintaining preprocessing and tokenizer parity between Python and browser inference.",
+            "Optimizing ONNX model loading and deployment for static hosting."
+          ],
+          "technologies": [
+            "Python",
+            "Pandas",
+            "Scikit-learn",
+            "PyTorch",
+            "Hugging Face Transformers",
+            "DistilBERT",
+            "ONNX Runtime",
+            "ONNX Runtime Web",
+            "FastAPI",
+            "Docker",
+            "React",
+            "TypeScript",
+            "Vite",
+            "Cloudflare Pages",
+            "GitHub Actions",
+            "Pytest",
+            "Vitest",
+            "uv"
+          ]
+        }
+      },
+      {
         "id": "adas-graduation",
         "title": "ADAS Graduation Project",
         "category": "machine-learning",
@@ -388,8 +465,8 @@
         "level": "Advanced",
         "details": {
           "data-analytics": ["Pandas & NumPy", "Matplotlib, Seaborn, Plotly", "EDA & Data Cleaning", "Streamlit Dashboards"],
-          "machine-learning": ["Scikit-learn", "XGBoost", "PyTorch", "Model Evaluation & Tuning", "SciPy & Statistics"],
-          "software": ["Flask & FastAPI", "Socket Programming", "Firebase Admin SDK", "Pygame", "Object-Oriented Programming", "Design Patterns", "SOLID Principles"]
+          "machine-learning": ["Scikit-learn", "XGBoost", "PyTorch", "Transformers", "Pandas", "Model Evaluation"],
+          "software": ["FastAPI", "Flask", "Pytest", "uv", "OOP", "Design Patterns", "SOLID Principles", "Socket Programming"]
         }
       },
       {
@@ -399,7 +476,7 @@
         "proficiency": 75,
         "level": "Intermediate",
         "details": {
-          "machine-learning": ["Supervised Learning (Classification, Regression)", "Scikit-learn Pipelines", "XGBoost & Ensemble Methods", "Model Evaluation (AUC, F1, Accuracy)", "Feature Engineering", "Cross Validation", "Hyperparameter Tuning"]
+          "machine-learning": ["Scikit-learn", "XGBoost", "Supervised Learning", "Feature Engineering", "Model Evaluation", "Cross-Validation", "Stratified Splitting", "Class Imbalance", "Hyperparameter Tuning"]
         }
       },
       {
@@ -409,7 +486,7 @@
         "proficiency": 65,
         "level": "Intermediate",
         "details": {
-          "machine-learning": ["PyTorch", "Neural Networks", "RNNs & LSTMs", "Transformers", "Regularization & Optimization", "CNN Architectures", "Transfer Learning"]
+          "machine-learning": ["PyTorch", "Neural Networks", "CNNs & TextCNN", "RNNs & LSTMs", "Transformers", "Transfer Learning", "Fine-Tuning", "Gradient Accumulation", "Mixed Precision"]
         }
       },
       {
@@ -419,7 +496,7 @@
         "proficiency": 60,
         "level": "Intermediate",
         "details": {
-          "machine-learning": ["NLTK", "Text Preprocessing & Tokenization", "Word Embeddings (Word2Vec, GloVe)", "Text Representation (TF-IDF, BoW)", "Sentiment Analysis", "Transformers for NLP"]
+          "machine-learning": ["Text Preprocessing", "Tokenization", "TF-IDF & BoW", "Text Classification", "Transformers", "DistilBERT", "Hugging Face", "Fine-Tuning", "Word Embeddings"]
         }
       },
       {
@@ -439,8 +516,8 @@
         "proficiency": 55,
         "level": "Beginner",
         "details": {
-          "machine-learning": ["FastAPI for ML APIs", "Flask", "MLflow Experiment Tracking", "Docker (Basic)", "GitHub Actions CI/CD", "ONNX Model Export", "Redis (Basic)"],
-          "software": ["FastAPI", "Flask", "Docker (Basic)", "CI/CD Pipelines", "REST API Design"]
+          "machine-learning": ["FastAPI", "Docker", "ONNX Runtime", "INT8 Quantization", "Hugging Face Hub", "GitHub Actions", "Cloudflare Pages", "WASM", "MLflow"],
+          "software": ["FastAPI", "Flask", "Docker", "REST APIs", "CI/CD", "Automated Testing", "ONNX Runtime"]
         }
       },
       {
@@ -511,9 +588,9 @@
         "proficiency": 82,
         "level": "Advanced",
         "details": {
-          "data-analytics": ["Version Control for Projects", "GitHub Portfolio Management"],
-          "machine-learning": ["Experiment Tracking", "Collaborative ML Projects", "GitHub Actions CI/CD"],
-          "software": ["Branching & Merging", "CI/CD Basics", "Open Source Contributions"]
+          "data-analytics": ["Version Control", "GitHub"],
+          "machine-learning": ["Experiment Tracking", "GitHub Actions", "CI/CD"],
+          "software": ["Git Branching", "Pull Requests", "GitHub Actions", "GitHub Releases"]
         }
       }
     ]
